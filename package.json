@@ -1,7 +1,13 @@
 {
-  "name": "phivocsAPI",
+  "name": "phivocs-api",
+  "version": "1.0.0",
+  "description": "API for accessing PHIVOLCS earthquake data",
+  "main": "src/index.ts",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun install",
+    "vercel-build": "bun install"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.5",
@@ -11,6 +17,27 @@
     "zod": "^4.1.13"
   },
   "devDependencies": {
-    "@types/bun": "latest"
-  }
+    "@types/bun": "latest",
+    "@vercel/node": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravvdevv/phivocs-api.git"
+  },
+  "keywords": [
+    "phivolcs",
+    "earthquake",
+    "api",
+    "philippines"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravvdevv/phivocs-api/issues"
+  },
+  "homepage": "https://github.com/ravvdevv/phivocs-api#readme"
 }

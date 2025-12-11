@@ -1,0 +1,15 @@
+[install]
+# Use the node_modules directory for dependencies
+modules = "node_modules"
+
+[build]
+# Build configuration
+outdir = ".vercel/output"
+
+[dev]
+# Development server configuration
+port = 3000
+
+[test]
+# Test configuration
+timeout = 5000
